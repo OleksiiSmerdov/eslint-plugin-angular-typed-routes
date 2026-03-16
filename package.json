@@ -1,0 +1,68 @@
+{
+  "name": "eslint-plugin-angular-typed-routes",
+  "version": "0.1.0",
+  "description": "ESLint plugin that enforces explicit return types on Angular route resolvers, catching type mismatches at lint time.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "angular",
+    "typescript",
+    "route-resolver",
+    "static-analysis",
+    "type-safety",
+    "linting"
+  ],
+  "author": "OleksiiSmerdov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OleksiiSmerdov/eslint-plugin-angular-typed-routes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OleksiiSmerdov/eslint-plugin-angular-typed-routes/issues"
+  },
+  "homepage": "https://github.com/OleksiiSmerdov/eslint-plugin-angular-typed-routes#readme",
+  "dependencies": {
+    "@typescript-eslint/utils": "^8.0.0"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/parser": ">=8.0.0",
+    "eslint": ">=9.0.0",
+    "typescript": ">=5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "@typescript-eslint/rule-tester": "^8.0.0",
+    "@vitest/coverage-v8": "^4.1.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
