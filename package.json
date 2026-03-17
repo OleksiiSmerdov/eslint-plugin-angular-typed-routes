@@ -58,11 +58,13 @@
     "@typescript-eslint/parser": "^8.0.0",
     "@typescript-eslint/rule-tester": "^8.0.0",
     "@vitest/coverage-v8": "^4.1.0",
+    "jiti": "^2.6.1",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0",
+    "typescript-eslint": "^8.57.1",
     "vitest": "^4.1.0"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
   }
 }
