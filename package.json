@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-angular-typed-routes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint plugin that enforces explicit return types on Angular route resolvers, catching type mismatches at lint time.",
   "type": "module",
   "main": "./dist/index.cjs",
