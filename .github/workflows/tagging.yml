@@ -40,7 +40,7 @@ jobs:
           fi
 
       - name: Create and push tag
-        if: steps:check_tag.outputs.exists == 'false'
+        if: steps.check_tag.outputs.exists == 'false'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
