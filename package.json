@@ -39,7 +39,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OleksiiSmerdov/eslint-plugin-angular-typed-routes.git"
+    "url": "git+https://github.com/OleksiiSmerdov/eslint-plugin-angular-typed-routes.git"
   },
   "bugs": {
     "url": "https://github.com/OleksiiSmerdov/eslint-plugin-angular-typed-routes/issues"
